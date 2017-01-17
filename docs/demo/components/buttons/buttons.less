@@ -1,0 +1,76 @@
+// Buttons
+//
+// A majority of buttons in the site are built from the same base class.
+//
+// Markup: buttons.hbs
+//
+// .btn-primary   - Use this class to indicate that the button is the primary
+//              feature of this form.
+// .btn-default   - Use this class to indicate that the button is negative connotations.
+// :hover     - Highlight the button when hovered.
+// :active    - "Press" the button down when clicked.
+// .btn-disabled  - Make the button change appearance to reflect it being disabled.
+//
+// Style guide: demo.components.buttons
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  outline: none;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  min-width: 100px;
+  background-color: white;
+  border-color: #ccc;
+
+
+  &.btn-primary {
+    background-color: #00a5e0;
+    border-color: #00a5e0;
+    color: #fff;
+  }
+
+  &.btn-default {
+  }
+
+  &:hover {
+    border-color: #ababaf;
+  }
+
+  &:active {
+    background-color: #f7f9fa;
+    border-color: #4c5161;
+  }
+
+  &.btn-disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &.btn-sm {
+    min-width: 60px;
+  }
+
+  &.btn-tiny {
+    min-width: 40px;
+    padding: 0px;
+  }
+}
+
+
+

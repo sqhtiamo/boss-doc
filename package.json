@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "kss-node docs styleGuide --template boss-doc-template --css styles.css --homepage homepage.md --verbose",
-    "poststart": "cp docs/styles.css styleGuide/styles.css",
+    "poststart": "lessc ./docs/styles.less ./styleGuide/styles.css && cp -R ./docs/assets ./styleGuide/",
     "demo": "kss-node --xdemo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

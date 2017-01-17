@@ -32,15 +32,15 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a href="section-spec.html">
+        <a href="section-design-spec.html">
           <span class="kss-nav__ref">1</span
           ><span class="kss-nav__name">Design Spec [设计规范]</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a href="section-javascript-api.html">
+        <a href="section-coding-spec.html">
           <span class="kss-nav__ref">2</span
-          ><span class="kss-nav__name">Coding Spec [代码规范]</span>
+          ><span class="kss-nav__name">Coding Spec [编码规范]</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -50,21 +50,15 @@
         </a>
         <ul class="kss-nav__menu-child">
             <li class="kss-nav__menu-item">
-              <a href="section-demo.html#kssref-demo-mixins">
+              <a href="section-demo.html#kssref-demo-variable">
                 <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">Mixins</span>
+                ><span class="kss-nav__name">Variable</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-demo.html#kssref-demo-mixins-button-colorize">
+              <a href="section-demo.html#kssref-demo-variable-variable">
                 <span class="kss-nav__ref kss-nav__ref-child">3.1.1</span
-                ><span class="kss-nav__name">.button-colorize(@color)</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-demo.html#kssref-demo-mixins-example">
-                <span class="kss-nav__ref kss-nav__ref-child">3.1.2</span
-                ><span class="kss-nav__name">.colors(@bg, @color)</span>
+                ><span class="kss-nav__name">Color</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
@@ -120,95 +114,49 @@
       </h1>
 
 
-      <div class="kss-description">
-        <p>The source files for this demo can be found in the
-<a href="https://github.com/kss-node/kss-node/tree/master/demo">demo folder</a> on
-GitHub.</p>
-
-      </div>
     </div>
 
 
       </div>
-      <section id="kssref-demo-mixins" class="kss-section kss-section--depth-2">
+      <section id="kssref-demo-variable" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-demo-mixins">
+        <a class="kss-title__permalink" href="#kssref-demo-variable">
           <span class="kss-title__ref">
               3.1
             <span class="kss-title__permalink-hash">
-                #demo.mixins
+                #demo.variable
             </span>
           </span>
-          Mixins
+          Variable
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>LESS mixins used in this demo.</p>
+        <p>Variable used in this demo.</p>
 
       </div>
     </div>
 
 
       </section>
-      <section id="kssref-demo-mixins-button-colorize" class="kss-section kss-section--depth-3">
+      <section id="kssref-demo-variable-variable" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-demo-mixins-button-colorize">
+        <a class="kss-title__permalink" href="#kssref-demo-variable-variable">
           <span class="kss-title__ref">
               3.1.1
             <span class="kss-title__permalink-hash">
-                #demo.mixins.button-colorize
+                #demo.variable.variable
             </span>
           </span>
-          .button-colorize(@color)
+          Color
         </a>
       </h3>
 
-      <ul class="kss-parameters">
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">@color</code>
-          <div class="kss-parameters__description">Button color.</div>
-        </li>
-      </ul>
-
-      <div class="kss-description">
-        <p>Creates button styling with the specified color.</p>
-
-      </div>
-    </div>
-
-
-      </section>
-      <section id="kssref-demo-mixins-example" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-demo-mixins-example">
-          <span class="kss-title__ref">
-              3.1.2
-            <span class="kss-title__permalink-hash">
-                #demo.mixins.example
-            </span>
-          </span>
-          .colors(@bg, @color)
-        </a>
-      </h3>
-
-      <ul class="kss-parameters">
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">@bg</code>
-          <div class="kss-parameters__description">Background color; defaults to <code>#f5f5f5</code>.</div>
-        </li>
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">@color</code>
-          <div class="kss-parameters__description">Foreground color; defaults to <code>#900</code>.</div>
-        </li>
-      </ul>
 
       <div class="kss-description">
         <p>Applies foreground and background colors.</p>
@@ -216,6 +164,36 @@ GitHub.</p>
       </div>
     </div>
 
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <span class="[modifier class]" style="background-color: #ccc; padding: 10px; margin-right:10px;">前景色</span>
+<span class="bg-[modifier class]" style="color: #ccc; padding: 10px; margin-right:10px;">背景色</span>
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .blue
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Color of Blue
+        </div>
+        <div class="kss-modifier__example">
+          <span class="blue" style="background-color: #ccc; padding: 10px; margin-right:10px;">前景色</span>
+<span class="bg-blue" style="color: #ccc; padding: 10px; margin-right:10px;">背景色</span>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;[modifier class]&quot; style=&quot;background-color: #ccc; padding: 10px; margin-right:10px;&quot;&gt;前景色&lt;/span&gt;
+&lt;span class=&quot;bg-[modifier class]&quot; style=&quot;color: #ccc; padding: 10px; margin-right:10px;&quot;&gt;背景色&lt;/span&gt;
+</code></pre>
+      </div>
 
       </section>
       <section id="kssref-demo-components" class="kss-section kss-section--depth-2">
@@ -273,33 +251,33 @@ So far this just includes buttons.</p>
           Default styling
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="button [modifier class]">Link Button</a>
-<button class="button [modifier class]">Button Element</button>
-<input type="button" class="button [modifier class]" value="input[type='button']"/>
+          <button class="btn [modifier class]">按 钮</button>
+<button class="btn btn-sm [modifier class]">按 钮</button>
+<button class="btn btn-tiny [modifier class]">按 钮</button>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .primary
+          .btn-primary
         </div>
         <div class="kss-modifier__description kss-style">
           Use this class to indicate that the button is the primary feature of this form.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="button primary">Link Button</a>
-<button class="button primary">Button Element</button>
-<input type="button" class="button primary" value="input[type='button']"/>
+          <button class="btn btn-primary">按 钮</button>
+<button class="btn btn-sm btn-primary">按 钮</button>
+<button class="btn btn-tiny btn-primary">按 钮</button>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .remove
+          .btn-default
         </div>
         <div class="kss-modifier__description kss-style">
-          Use this class to indicate that the button will remove a feature, or other negative connotations.
+          Use this class to indicate that the button is negative connotations.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="button remove">Link Button</a>
-<button class="button remove">Button Element</button>
-<input type="button" class="button remove" value="input[type='button']"/>
+          <button class="btn btn-default">按 钮</button>
+<button class="btn btn-sm btn-default">按 钮</button>
+<button class="btn btn-tiny btn-default">按 钮</button>
 
         </div>
         <div class="kss-modifier__name kss-style">
@@ -309,21 +287,9 @@ So far this just includes buttons.</p>
           Highlight the button when hovered.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="button pseudo-class-hover">Link Button</a>
-<button class="button pseudo-class-hover">Button Element</button>
-<input type="button" class="button pseudo-class-hover" value="input[type='button']"/>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          :disabled
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Make the button change appearance to reflect it being disabled.
-        </div>
-        <div class="kss-modifier__example">
-          <a href="#" class="button pseudo-class-disabled">Link Button</a>
-<button class="button pseudo-class-disabled">Button Element</button>
-<input type="button" class="button pseudo-class-disabled" value="input[type='button']"/>
+          <button class="btn pseudo-class-hover">按 钮</button>
+<button class="btn btn-sm pseudo-class-hover">按 钮</button>
+<button class="btn btn-tiny pseudo-class-hover">按 钮</button>
 
         </div>
         <div class="kss-modifier__name kss-style">
@@ -333,17 +299,29 @@ So far this just includes buttons.</p>
           &quot;Press&quot; the button down when clicked.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="button pseudo-class-active">Link Button</a>
-<button class="button pseudo-class-active">Button Element</button>
-<input type="button" class="button pseudo-class-active" value="input[type='button']"/>
+          <button class="btn pseudo-class-active">按 钮</button>
+<button class="btn btn-sm pseudo-class-active">按 钮</button>
+<button class="btn btn-tiny pseudo-class-active">按 钮</button>
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-disabled
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Make the button change appearance to reflect it being disabled.
+        </div>
+        <div class="kss-modifier__example">
+          <button class="btn btn-disabled">按 钮</button>
+<button class="btn btn-sm btn-disabled">按 钮</button>
+<button class="btn btn-tiny btn-disabled">按 钮</button>
 
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;button [modifier class]&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class=&quot;button [modifier class]&quot;&gt;Button Element&lt;/button&gt;
-&lt;input type=&quot;button&quot; class=&quot;button [modifier class]&quot; value=&quot;input[type=&#x27;button&#x27;]&quot;/&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;btn [modifier class]&quot;&gt;按 钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-sm [modifier class]&quot;&gt;按 钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-tiny [modifier class]&quot;&gt;按 钮&lt;/button&gt;
 </code></pre>
       </div>
 
@@ -382,9 +360,9 @@ So far this just includes buttons.</p>
   <input type="text" class="" value="Text input"/></div>
 
 <p>
-<a href="#" class="button ">Link Button</a>
-<button class="button ">Button Element</button>
-<input type="button" class="button " value="input[type='button']"/>
+<button class="btn ">按 钮</button>
+<button class="btn btn-sm ">按 钮</button>
+<button class="btn btn-tiny ">按 钮</button>
 </p>
 </form>
 
@@ -399,9 +377,9 @@ So far this just includes buttons.</p>
   &lt;input type=&quot;text&quot; class=&quot;&quot; value=&quot;Text input&quot;/&gt;&lt;/div&gt;
 
 &lt;p&gt;
-&lt;a href=&quot;#&quot; class=&quot;button &quot;&gt;Link Button&lt;/a&gt;
-&lt;button class=&quot;button &quot;&gt;Button Element&lt;/button&gt;
-&lt;input type=&quot;button&quot; class=&quot;button &quot; value=&quot;input[type=&#x27;button&#x27;]&quot;/&gt;
+&lt;button class=&quot;btn &quot;&gt;按 钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-sm &quot;&gt;按 钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-tiny &quot;&gt;按 钮&lt;/button&gt;
 &lt;/p&gt;
 &lt;/form&gt;
 </code></pre>
