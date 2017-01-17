@@ -1,0 +1,14 @@
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": ".",
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "styles.css"
+  ],
+  "js": [],
+
+  "title": "Froad Boss 文档规范平台",
+  "homepage": "homepage.md",
+  "verbose": true
+}

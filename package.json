@@ -1,0 +1,22 @@
+{
+  "name": "boss-doc",
+  "version": "1.0.0",
+  "description": "方付通BOSS侧基础组件、业务组件规范文档平台",
+  "main": "index.js",
+  "scripts": {
+    "start": "kss-node docs styleGuide --template boss-doc-template --css styles.css --homepage homepage.md --verbose",
+    "poststart": "cp docs/styles.css styleGuide/styles.css",
+    "demo": "kss-node --xdemo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "boss",
+    "doc",
+    "Froad"
+  ],
+  "author": "cloughzhang",
+  "license": "MIT",
+  "devDependencies": {
+    "kss": "^2.4.0"
+  }
+}
